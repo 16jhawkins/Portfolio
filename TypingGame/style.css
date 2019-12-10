@@ -1,0 +1,32 @@
+.column {
+    float: left;
+    width: 16%;
+
+
+}
+div.word{
+    position: relative;
+    animation-name: timer;
+    animation-duration: 12s;
+    text-align: center;
+    background-position: center center;
+    width: 200px;
+    padding: 10px;
+
+    animation-timing-function: linear;
+    
+}
+
+@keyframes timer {
+    0%   {background-color:green; top:0px;}
+    50%  {background-color:yellow;top:200px;}
+    100% {background-color:red;top:400px;}
+}
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
