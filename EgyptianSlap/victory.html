@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="egyptian.css?Version=1.6">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@0.4.0/dist/confetti.browser.min.js"></script>
+
+
+    <title>WSU CS3750 Assignment #2</title>
+
+</head>
+
+<body>
+
+    <nav id="navigation">
+
+        <ul>
+
+            <li><a href="/home.html">Home</a></li>
+
+            <li><a href="/index.php">Play Now</a></li>
+
+            <li><a href="/aboutus.html">About Us</a></li>
+
+        </ul>
+
+    </nav>
+
+    <section id="victorySection">
+        <br />
+        <br />
+        <br />
+        <h1>YOU WIN!</h1>
+
+        <img src="images/tut.png" id="secImg" />
+        <hr />
+        <br />
+        <button type="button" class="btn"><a href="/index.php">Return to Game Setup</a></button>
+    </section>
+    <script>
+        // EXTERNAL CODE BELOW (made by Kiril Vatev (catdad @ github [https://catdad.github.io/canvas-confetti/])): 
+        var end = Date.now() + (15 * 1000);
+
+        var interval = setInterval(function () {
+            if (Date.now() > end) {
+                return clearInterval(interval);
+            }
+
+            confetti({
+                startVelocity: 30,
+                spread: 360,
+                ticks: 60,
+                shapes: ['square'],
+                origin: {
+                    x: Math.random(),
+                    // since they fall down, start a bit higher than random
+                    y: Math.random() - 0.2
+                }
+            });
+        }, 200);
+        // EXTERNAL CODE ABOVE (made by Kiril Vatev (catdad @ github [https://catdad.github.io/canvas-confetti/]))
+        confetti();
+    </script>
+</body>
+
+<footer id="footer">
+
+    <a href="https://www.youtube.com" target="_blank">
+
+        <img alt="Youtube logo" src="/images/youtube2.png" class="icon" id="ytIcon">
+
+    </a>
+
+    <a href="https://www.facebook.com" target="_blank">
+
+        <img alt="Facebook logo" src="/images/facebook2.png" class="icon" id="fbIcon">
+
+    </a>
+
+    <a href="https://www.twitter.com" target="_blank">
+
+        <img alt="Twitter logo" src="/images/twitter2.png" class="icon" id="twIcon"></a>
+
+</footer>
+
+</html>
